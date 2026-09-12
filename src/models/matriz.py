@@ -6,10 +6,10 @@ class Matriz:
         self.pontos_entrega = {}
         self.origem = None
 
-    def carregar_do_arquivo(self, caminho_arquivo):
+    def carregar_de_arquivo(self, caminho_arquivo):
         try:
             with open(caminho_arquivo, 'r') as arquivo:
-                primeira_linha = arquivo.readline().strip.split()
+                primeira_linha = arquivo.readline().strip().split()
                 linhas = int(primeira_linha[0])
                 colunas = int(primeira_linha[1])
 
@@ -40,7 +40,7 @@ class Matriz:
             return False
 
     def exibir(self):
-        print(f/"matriz {self.linhas}x{self.colunas}:")
+        print(f"matriz {self.linhas}x{self.colunas}:")
         for linha in self.dados:
             print(' '.join(linha))
         print(f"\norigem (R): {self.origem}")
