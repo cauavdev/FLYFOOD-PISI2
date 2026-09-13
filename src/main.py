@@ -34,5 +34,5 @@ def main():
     dist_teste = calcular_distancia_rota(matriz, rota_teste)
     print(f'Distância: {dist_teste} dronômetros')
 
-if __name__ == '_main__':
+if __name__ == '__main__':
     main()
