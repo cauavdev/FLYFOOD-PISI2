@@ -1,6 +1,7 @@
 import sys
 from models.matriz import Matriz
 from utils.matriz_utils import validar_matriz, exibir_resumo_matriz
+from utils.distancia import calcular_distancia_rota, formatar_rota
 
 
 def main():
@@ -27,5 +28,11 @@ def main():
 
     exibir_resumo_matriz(matriz)
 
-if __name__ == '__main__':
+    print("\n--- Testando Cálculo de Distância ---")
+    rota_teste = list(matriz.obter_pontos_entrega().keys())
+    print(f'Rota de teste: {formatar_rota(rota_teste)}')
+    dist_teste = calcular_distancia_rota(matriz, rota_teste)
+    print(f'Distância: {dist_teste} dronômetros')
+
+if __name__ == '_main__':
     main()
