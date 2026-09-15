@@ -9,7 +9,7 @@ Com esse cenário em vista, já nos dias atuais (2026) o empreendedor da FlyFood
 
 Para abstrair as questões de encontrar endereços e obter coordenadas GPS, vamos trabalhar com uma matriz que representa os pontos da cidade. Veja um exemplo de matriz logo a seguir:
 
-<img src="./README/image.png" width="400" alt="Exemplo">
+![Example Image](image.png)
 
 Na matriz, o ponto superior esquerdo é o (0,0) e nessa posição não existe um ponto de entrega. Já no ponto (1,1) existe o ponto de entrega A. Os demais pontos de entrega estão nos pontos B (3,2), C (2,4) e D (0, 4). No exemplo acima, a origem do drone, ou seja onde ele é carregado com os pedidos, é o ponto R (3,0). Por convenção, o ponto R sempre será o ponto de origem e retorno.
 
