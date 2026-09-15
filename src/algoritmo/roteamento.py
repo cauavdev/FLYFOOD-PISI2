@@ -22,10 +22,10 @@ def calcular_melhor_rota(matriz):
     return melhor_rota, melhor_distancia
 
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     import sys
     import os
-    sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(_file_), '..')))
+    sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
     from models.matriz import Matriz
 
     matriz = Matriz(0, 0)

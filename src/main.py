@@ -2,6 +2,7 @@ import sys
 from models.matriz import Matriz
 from utils.matriz_utils import validar_matriz, exibir_resumo_matriz
 from utils.distancia import calcular_distancia_rota, formatar_rota
+from algoritmo.roteamento import calcular_melhor_rota
 
 
 def main():
@@ -28,11 +29,10 @@ def main():
 
     exibir_resumo_matriz(matriz)
 
-    print("\n--- Testando Cálculo de Distância ---")
-    rota_teste = list(matriz.obter_pontos_entrega().keys())
-    print(f'Rota de teste: {formatar_rota(rota_teste)}')
-    dist_teste = calcular_distancia_rota(matriz, rota_teste)
-    print(f'Distância: {dist_teste} dronômetros')
+    print("\n--- Calculando Melhor Rota ---")
+    melhor_rota, melhor_distancia = calcular_melhor_rota(matriz)
+    print(f'Melhor rota: {formatar_rota(melhor_rota)}')
+    print(f'Distância: {melhor_distancia} dronômetros')
 
 if __name__ == '__main__':
     main()
