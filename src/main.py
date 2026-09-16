@@ -1,3 +1,4 @@
+import time
 import sys
 from models.matriz import Matriz
 from utils.matriz_utils import validar_matriz, exibir_resumo_matriz
@@ -6,6 +7,8 @@ from algoritmo.roteamento import calcular_melhor_rota
 
 
 def main():
+    tempo_inicial = time.time()
+
     print("=" * 20)
     print("FlyFood - PISI-2")
     print("=" * 20)
@@ -33,6 +36,12 @@ def main():
     melhor_rota, melhor_distancia = calcular_melhor_rota(matriz)
     print(f'Melhor rota: {formatar_rota(melhor_rota)}')
     print(f'Distância: {melhor_distancia} dronômetros')
+
+    tempo_final = time.time()
+    tempo_total = tempo_final - tempo_inicial
+
+    print(f"\n Tempo de Duração: {tempo_total:.4f}s")
+    
 
 if __name__ == '__main__':
     main()
