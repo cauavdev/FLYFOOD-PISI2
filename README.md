@@ -9,7 +9,11 @@ Com esse cenário em vista, já nos dias atuais (2026) o empreendedor da FlyFood
 
 Para abstrair as questões de encontrar endereços e obter coordenadas GPS, vamos trabalhar com uma matriz que representa os pontos da cidade. Veja um exemplo de matriz logo a seguir:
 
-<img src="./README/image.png" width="400" alt="Exemplo">
+| | | | D |
+|---|---|---|---|
+| | A | | |
+| | | | C |
+| R | | B | |
 
 Na matriz, o ponto superior esquerdo é o (0,0) e nessa posição não existe um ponto de entrega. Já no ponto (1,1) existe o ponto de entrega A. Os demais pontos de entrega estão nos pontos B (3,2), C (2,4) e D (0, 4). No exemplo acima, a origem do drone, ou seja onde ele é carregado com os pedidos, é o ponto R (3,0). Por convenção, o ponto R sempre será o ponto de origem e retorno.
 
@@ -19,12 +23,13 @@ Seu trabalho será elaborar um algoritmo que vai ler uma matriz, a partir de um 
 
 O formato do arquivo de entrada será o seguinte para a matriz de exemplo.
 
+```text
 4 5
 0 0 0 0 D
 0 A 0 0 0
 0 0 0 0 C
 R 0 B 0 0
-
+```
 
 Sua resposta deverá ser a sequência de pontos (em forma de string) que produz o menor circuito possível a ser percorrido pelo drone entre os pontos de entrega, partindo e retornando ao ponto R (o ponto R não precisa ser incluído na sequência de resposta). Por exemplo: "A D C B". (obs: se existir mais de um trajeto com a menor distância, basta retornar um deles.)
 
