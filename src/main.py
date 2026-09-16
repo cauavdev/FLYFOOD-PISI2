@@ -41,7 +41,7 @@ def main():
     tempo_total = tempo_final - tempo_inicial
 
     print(f"\n Tempo de Duração: {tempo_total:.4f}s")
-    
+
 
 if __name__ == '__main__':
     main()
