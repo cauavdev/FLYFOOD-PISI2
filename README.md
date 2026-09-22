@@ -1,4 +1,4 @@
-# FlyFood - Roteamento de Drones (PISI2)
+# FlyFood - Rotas Otimizadas (PISI2)
 
 ## Descrição
 Estamos no ano de 2030 e nesse futuro não tão distante o trânsito está caótico. As empresas de delivery já não conseguem fazer entregas em um tempo aceitável e o custo com entregadores está muito alto, pois mão-de-obra humana está cada vez mais valorizada devido à grande oferta de empregos (ok… essa última parte é mais sonho do que realidade, mas vamos considerá-la). Então, um ex-aluno do BSI-UFRPE resolve criar uma empresa chamada FlyFood para fazer entregas utilizando drones.
